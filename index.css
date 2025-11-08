@@ -1,0 +1,77 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.lacquer-regular {
+  font-family: "Lacquer", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+body{
+
+    background-color: rgb(255, 195, 105);
+    min-height: 1000vh;
+    font-weight: 200;
+    font-style: normal;
+    font-family: "Lacquer", system-ui;
+    cursor: url("img/Chainsaw\ Man\ Denji\ &\ Pochita\ Animated\ -\ cursor\ -\ SweezyCursors\(1\).png"), auto;
+}
+
+h1 {
+    margin: 40px 0;
+    font-size: 80px;
+    text-align: center;
+    color: black;
+    animation: entrada 1s ease-out;
+   
+}
+@keyframes entrada {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.Galeria{
+max-width: 1200px;
+width: 90%;
+margin: 0 auto;
+display: flex;
+justify-content: space-evenly;
+flex-wrap: wrap;
+
+}
+img{
+    width: 30%;
+    margin-bottom: 30px;
+    height: 200px;
+    object-fit: cover; 
+    border-radius: 10px;
+    box-shadow: 0 0 6px rgb(0, 0, 0,.6);
+    transition: transform 0.8s ease;
+    border: 10px solid  rgb(255, 255, 255);
+}
+
+img:hover {
+  transform: scale(1.1)
+}
+
+@media screen and (max-width: 800px) {
+    img{ 
+        width: 90%;
+    }
+    
+}
+@media  screen and (max-width:500px) {
+    img{
+        width: 95%;
+    }
+}
